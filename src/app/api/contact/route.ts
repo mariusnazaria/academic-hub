@@ -4,6 +4,15 @@ import { existsSync } from 'fs';
 import path from 'path';
 import { sendContactMessagesToAdmin, sendContactConfirmation } from '@/lib/email';
 
+// Define contact interface
+interface ContactData {
+  nume: string;
+  email: string;
+  telefon: string;
+  mesaj: string;
+  data: string;
+}
+
 // Helper function to get all contacts for admin email
 async function getAllContacts() {
   try {
@@ -16,9 +25,18 @@ async function getAllContacts() {
     
     return lines.slice(1).map(line => {
       const values = line.split(',');
-      const contact: any = {};
+      const contact: ContactData = {
+        nume: '',
+        email: '',
+        telefon: '',
+        mesaj: '',
+        data: ''
+      };
       headers.forEach((header, index) => {
-        contact[header] = values[index] || '';
+        const key = header.toLowerCase() as keyof ContactData;
+        if (key in contact) {
+          contact[key] = values[index] || '';
+        }
       });
       return contact;
     });
@@ -42,7 +60,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create contact data
-    const contactData = {
+    const contactData: ContactData = {
       nume: nume.trim(),
       email: email.trim().toLowerCase(),
       telefon: telefon?.trim() || '',

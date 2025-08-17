@@ -1,15 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import { 
-  GraduationCap, 
-  Award, 
-  Clock, 
-  Star,
-  Mail,
-  Phone,
-  MessageCircle
-} from 'lucide-react';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { GraduationCap, Award, Clock, Star, Mail, Phone, MessageCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
@@ -138,10 +131,11 @@ export default function Profesori() {
                 {/* Teacher Photo */}
                 <div className="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center relative overflow-hidden">
                   {teacher.photo && teacher.photo !== '/placeholder-teacher.jpg' ? (
-                    <img 
+                    <Image 
                       src={teacher.photo} 
                       alt={`${teacher.name} - ${teacher.title}`}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   ) : (
                     <div className="text-center text-white">

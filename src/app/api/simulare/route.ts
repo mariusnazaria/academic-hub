@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { writeFile, appendFile, readFile } from 'fs/promises';
+import { writeFile, appendFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import path from 'path';
 import { sendSimulationConfirmation } from '@/lib/email';
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
       nume: simulationData.nume,
       email: simulationData.email,
       clasa: simulationData.clasa,
-      dataSimulare: simulationData.dataSimulare
+      dataSimulare: simulationData.data_simulare
     });
 
     // Return success response

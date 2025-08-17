@@ -1,9 +1,25 @@
 import nodemailer from 'nodemailer';
-import { writeFileSync } from 'fs';
-import path from 'path';
+
+// Define interfaces for type safety
+interface ContactData {
+  nume: string;
+  email: string;
+  telefon: string;
+  mesaj: string;
+  data: string;
+}
+
+interface EnrollmentData {
+  nume: string;
+  email: string;
+  telefon: string;
+  course: string;
+  date: string;
+  status: string;
+}
 
 // Email configuration
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER || 'academichubmd@gmail.com',
@@ -12,12 +28,12 @@ const transporter = nodemailer.createTransporter({
 });
 
 // Generate CSV content from data
-export function generateCSV(data: any[], headers: string[]): string {
+export function generateCSV(data: (ContactData | EnrollmentData)[], headers: string[]): string {
   const csvContent = [
     headers.join(','),
     ...data.map(row => 
       headers.map(header => {
-        const value = row[header.toLowerCase()] || row[header] || '';
+        const value = row[header.toLowerCase() as keyof (ContactData | EnrollmentData)] || '';
         // Escape quotes and wrap in quotes if contains comma
         return `"${String(value).replace(/"/g, '""')}"`;
       }).join(',')
@@ -28,7 +44,7 @@ export function generateCSV(data: any[], headers: string[]): string {
 }
 
 // Send enrollment data to admin
-export async function sendEnrollmentDataToAdmin(enrollments: any[]) {
+export async function sendEnrollmentDataToAdmin(enrollments: EnrollmentData[]) {
   if (enrollments.length === 0) return;
 
   const csvContent = generateCSV(enrollments, [
@@ -68,7 +84,7 @@ export async function sendEnrollmentDataToAdmin(enrollments: any[]) {
 }
 
 // Send contact messages to admin
-export async function sendContactMessagesToAdmin(contacts: any[]) {
+export async function sendContactMessagesToAdmin(contacts: ContactData[]) {
   if (contacts.length === 0) return;
 
   const csvContent = generateCSV(contacts, [

@@ -4,6 +4,16 @@ import { existsSync } from 'fs';
 import path from 'path';
 import { sendEnrollmentDataToAdmin, sendEnrollmentConfirmation } from '@/lib/email';
 
+// Define enrollment interface
+interface EnrollmentData {
+  nume: string;
+  email: string;
+  telefon: string;
+  course: string;
+  date: string;
+  status: string;
+}
+
 // Helper function to get all enrollments for admin email
 async function getAllEnrollments() {
   try {
@@ -16,9 +26,19 @@ async function getAllEnrollments() {
     
     return lines.slice(1).map(line => {
       const values = line.split(',');
-      const enrollment: any = {};
+      const enrollment: EnrollmentData = {
+        nume: '',
+        email: '',
+        telefon: '',
+        course: '',
+        date: '',
+        status: ''
+      };
       headers.forEach((header, index) => {
-        enrollment[header] = values[index] || '';
+        const key = header.toLowerCase() as keyof EnrollmentData;
+        if (key in enrollment) {
+          enrollment[key] = values[index] || '';
+        }
       });
       return enrollment;
     });
@@ -42,7 +62,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create enrollment data
-    const enrollmentData = {
+    const enrollmentData: EnrollmentData = {
       nume: nume.trim(),
       email: email.trim().toLowerCase(),
       telefon: telefon.trim(),
