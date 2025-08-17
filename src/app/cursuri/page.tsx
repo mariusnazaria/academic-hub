@@ -13,12 +13,12 @@ export default function Cursuri() {
 
   const courses = [
     {
-      title: "Clasa 9 A",
+      title: "Clasa 9 Nivel A",
       description: "Curs intensiv de matematică pentru clasa 9, nivel avansat",
-      price: "1500 MDL",
+      price: "2700 MDL",
       duration: "8 luni",
       schedule: "Luni și Miercuri, 16:00-18:00",
-      maxStudents: 8,
+      maxStudents: 6,
       subjects: ["Algebră", "Geometrie", "Trigonometrie"],
       features: [
         "Materiale didactice complete",
@@ -29,12 +29,12 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 9 B",
+      title: "Clasa 9 Nivel B",
       description: "Curs standard de matematică pentru clasa 9, nivel mediu",
-      price: "1200 MDL",
+      price: "2100 MDL",
       duration: "8 luni",
       schedule: "Marți și Joi, 16:00-18:00",
-      maxStudents: 10,
+      maxStudents: 6,
       subjects: ["Algebră", "Geometrie", "Trigonometrie"],
       features: [
         "Materiale didactice",
@@ -44,12 +44,12 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 9 C",
+      title: "Clasa 9 Nivel C",
       description: "Curs de bază de matematică pentru clasa 9, nivel începător",
-      price: "1000 MDL",
+      price: "1900 MDL",
       duration: "8 luni",
       schedule: "Vineri, 16:00-18:00 și Sâmbătă, 10:00-12:00",
-      maxStudents: 10,
+      maxStudents: 6,
       subjects: ["Algebră", "Geometrie"],
       features: [
         "Materiale didactice",
@@ -59,12 +59,12 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 12 A",
-      description: "Curs intensiv de matematică pentru clasa 12, nivel avansat",
-      price: "1800 MDL",
+      title: "Curs de pregătire pentru BAC",
+      description: "Curs complet de pregătire pentru examenul de bacalaureat",
+      price: "2000 MDL",
       duration: "8 luni",
       schedule: "Luni și Miercuri, 18:00-20:00",
-      maxStudents: 8,
+      maxStudents: 6,
       subjects: ["Algebră", "Geometrie", "Analiză", "Probabilități"],
       features: [
         "Materiale didactice complete",
@@ -76,13 +76,13 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 12 B",
-      description: "Curs standard de matematică pentru clasa 12, nivel mediu",
-      price: "1500 MDL",
-      duration: "8 luni",
+      title: "Curs pe Integrale",
+      description: "Curs specializat pe calculul integral și aplicații",
+      price: "2000 MDL",
+      duration: "6 luni",
       schedule: "Marți și Joi, 18:00-20:00",
-      maxStudents: 10,
-      subjects: ["Algebră", "Geometrie", "Analiză", "Probabilități"],
+      maxStudents: 6,
+      subjects: ["Integrale definite", "Integrale nedefinite", "Aplicații"],
       features: [
         "Materiale didactice",
         "Exerciții practice",
@@ -92,13 +92,45 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 12 C",
-      description: "Curs de bază de matematică pentru clasa 12, nivel începător",
-      price: "1200 MDL",
-      duration: "8 luni",
+      title: "Curs pe Geometria în spațiu",
+      description: "Curs specializat pe geometria tridimensională",
+      price: "2000 MDL",
+      duration: "6 luni",
       schedule: "Vineri, 18:00-20:00 și Sâmbătă, 14:00-16:00",
-      maxStudents: 10,
-      subjects: ["Algebră", "Geometrie", "Analiză"],
+      maxStudents: 6,
+      subjects: ["Geometrie în spațiu", "Coordonate", "Distanțe"],
+      features: [
+        "Materiale didactice",
+        "Exerciții practice",
+        "Suport individual",
+        "Teste de evaluare",
+        "Simulări de examen"
+      ]
+    },
+    {
+      title: "Curs pe Combinatorica",
+      description: "Curs specializat pe combinatorică și probabilități",
+      price: "2000 MDL",
+      duration: "6 luni",
+      schedule: "Sâmbătă, 10:00-12:00",
+      maxStudents: 6,
+      subjects: ["Combinatorica", "Permutări", "Combinații"],
+      features: [
+        "Materiale didactice",
+        "Exerciții practice",
+        "Suport individual",
+        "Teste de evaluare",
+        "Simulări de examen"
+      ]
+    },
+    {
+      title: "Curs pe Probabilitate",
+      description: "Curs specializat pe teoria probabilităților",
+      price: "2000 MDL",
+      duration: "6 luni",
+      schedule: "Duminică, 10:00-12:00",
+      maxStudents: 6,
+      subjects: ["Probabilități", "Distribuții", "Teste statistice"],
       features: [
         "Materiale didactice",
         "Exerciții practice",

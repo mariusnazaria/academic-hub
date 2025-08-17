@@ -113,7 +113,7 @@ export default function Home() {
                 <Users className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Grupuri Mici</h3>
-              <p className="text-gray-600">Maximum 8-10 elevi per grup pentru atenție personalizată</p>
+              <p className="text-gray-600">Maximum 5-6 elevi per grup pentru atenție personalizată</p>
             </div>
             
             <div className="text-center">
@@ -155,7 +155,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link href="/cursuri" className="group">
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -202,6 +202,22 @@ export default function Home() {
                 </p>
                 <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
                   Înscrie-te la simulare
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+            
+            <Link href="/rezolvari" className="group">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <BookOpen className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Rezolvari</h3>
+                <p className="text-gray-600 mb-6">
+                  Rezolvari ale culegerii de probleme AcademicHub.
+                </p>
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                  Vezi rezolvarile
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>

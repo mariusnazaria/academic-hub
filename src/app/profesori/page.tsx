@@ -14,7 +14,7 @@ export default function Profesori() {
     {
       id: 'catalin-botezat',
       name: 'Catalin Botezat',
-      title: 'Profesor Principal de Matematică',
+      title: 'Profesor',
       experience: '12 ani de experiență',
       education: 'Universitatea de Stat din Moldova, Facultatea de Matematică',
       subjects: ['Algebră', 'Geometrie', 'Analiză Matematică', 'Trigonometrie'],
@@ -40,7 +40,7 @@ export default function Profesori() {
     {
       id: 'dragos-bahov',
       name: 'Dragos Bahov',
-      title: 'Profesor de Matematică Avansată',
+      title: 'Profesor',
       experience: '8 ani de experiență',
       education: 'Universitatea Politehnică din Moldova, Facultatea de Matematică',
       subjects: ['Analiză Matematică', 'Algebră Liniară', 'Geometrie Analitică', 'Probabilități'],
@@ -66,7 +66,7 @@ export default function Profesori() {
     {
       id: 'ovidiu-harunjen',
       name: 'Ovidiu Harunjen',
-      title: 'Profesor de Matematică pentru Începători',
+      title: 'Profesor',
       experience: '6 ani de experiență',
       education: 'Universitatea de Stat din Moldova, Facultatea de Matematică',
       subjects: ['Algebră de bază', 'Geometrie plană', 'Aritmetică', 'Logica matematică'],
