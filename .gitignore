@@ -36,6 +36,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# data files (student information)
+*.csv
+enrollments.csv
+simulari.csv
+contacts.csv
+
+# test files
+test-email.js
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

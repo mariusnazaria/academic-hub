@@ -1,103 +1,334 @@
-import Image from "next/image";
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { 
+  Users, 
+  BookOpen, 
+  Award, 
+  TrendingUp, 
+  MessageCircle,
+  ArrowRight,
+  Star,
+  ChevronDown,
+  ChevronUp
+} from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Button from '@/components/Button';
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "Ce nivel de pregătire am nevoie pentru a începe cursurile?",
+      answer: "Cursurile noastre sunt adaptate pentru toate nivelurile. Evaluăm cunoștințele inițiale ale fiecărui elev și îl încadrăm în grupul potrivit."
+    },
+    {
+      question: "Câte elevi sunt într-un grup?",
+      answer: "Grupurile sunt mici, cu maximum 8-10 elevi, pentru a asigura atenția personalizată a profesorului și o experiență de învățare optimă."
+    },
+    {
+      question: "Oferiți materiale didactice?",
+      answer: "Da, toate cursurile includ materiale didactice complete, exerciții practice și teste de evaluare. Materialele sunt actualizate anual."
+    },
+    {
+      question: "Care este rata de succes a elevilor voștri?",
+      answer: "Elevii noștri au o rată de succes de peste 90% la examenele de matematică. Rezultatele vorbesc de la sine."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-green-50 to-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                Pregătire la{' '}
+                <span className="text-green-600">Matematică</span>
+                <br />
+                de Calitate
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Învață cu profesori experimentați în grupuri mici. 
+                Peste 500 de elevi au reușit cu noi. 
+                Rezultate garantate!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="/cursuri" size="lg" className="text-lg px-8 py-4">
+                  Înscrie-te Acum
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+                <a 
+                  href="https://wa.me/37368217739" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-green-500 text-green-600 rounded-lg font-medium text-lg hover:bg-green-50 transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-green-500 rounded-2xl p-8 shadow-2xl">
+                <div className="text-center text-white">
+                  <div className="text-6xl font-bold mb-4">A+</div>
+                  <div className="text-xl font-medium">AcademicHub.md</div>
+                  <div className="text-green-100 mt-2">Centru de Excelență</div>
+                </div>
+              </div>
+              <div className="absolute -top-4 -right-4 bg-white rounded-full p-4 shadow-lg">
+                <TrendingUp className="w-8 h-8 text-green-500" />
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Value Props Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              De ce AcademicHub.md?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Oferim o experiență de învățare superioară cu rezultate măsurabile
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Grupuri Mici</h3>
+              <p className="text-gray-600">Maximum 8-10 elevi per grup pentru atenție personalizată</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sute de Exerciții</h3>
+              <p className="text-gray-600">Materiale practice complete pentru fiecare lecție</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Profesori Experimentați</h3>
+              <p className="text-gray-600">Echipa noastră are peste 10 ani de experiență</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">90%+ Rata de Succes</h3>
+              <p className="text-gray-600">Elevii noștri reușesc la examene în proporție de peste 90%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Ce Oferim
+            </h2>
+            <p className="text-xl text-gray-600">
+              Servicii complete pentru pregătirea la matematică
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link href="/cursuri" className="group">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <BookOpen className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Cursuri</h3>
+                <p className="text-gray-600 mb-6">
+                  Cursuri specializate pentru clasele 9 și 12, cu programe personalizate 
+                  și materiale didactice complete.
+                </p>
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                  Vezi cursurile
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+            
+            <Link href="/profesori" className="group">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Users className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Profesori</h3>
+                <p className="text-gray-600 mb-6">
+                  Cunoaște echipa noastră de profesori experimentați, 
+                  specializați în pregătirea la matematică.
+                </p>
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                  Cunoaște profesorii
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+            
+            <Link href="/simulare" className="group">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Award className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Simulare</h3>
+                <p className="text-gray-600 mb-6">
+                  Simulări de examen în condiții reale pentru a-ți testa 
+                  cunoștințele și a te familiariza cu formatul.
+                </p>
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                  Înscrie-te la simulare
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Ce Spun Elevii Noștri
+            </h2>
+            <p className="text-xl text-gray-600">
+              Rezultatele vorbesc de la sine
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+                              <p className="text-gray-700 mb-4">
+                  &ldquo;Datorită cursurilor de la AcademicHub.md am reușit să obțin 10 la examenul de matematică. Profesorii sunt excepționali!&rdquo;
+                </p>
+              <div className="font-medium text-gray-900">Maria Popescu</div>
+              <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+                              <p className="text-gray-700 mb-4">
+                  &ldquo;Metodele de predare sunt foarte eficiente. Am înțeles concepte pe care nu le-am înțeles în școală.&rdquo;
+                </p>
+              <div className="font-medium text-gray-900">Alexandru Ionescu</div>
+              <div className="text-sm text-gray-600">Clasa 9, Chișinău</div>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+                              <p className="text-gray-700 mb-4">
+                  &ldquo;Grupurile mici permit atenția personalizată. Am progresat foarte mult în doar câteva luni.&rdquo;
+                </p>
+              <div className="font-medium text-gray-900">Elena Dumitrescu</div>
+              <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Întrebări Frecvente
+            </h2>
+            <p className="text-xl text-gray-600">
+              Răspunsuri la întrebările care ne sunt adresate cel mai des
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            {faqData.map((faq, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                >
+                  <span className="font-medium text-gray-900">{faq.question}</span>
+                  {openFaq === index ? (
+                    <ChevronUp className="w-5 h-5 text-green-500" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-gray-400" />
+                  )}
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-4">
+                    <p className="text-gray-600">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-green-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Gata să Începi?
+          </h2>
+          <p className="text-xl text-green-100 mb-8">
+            Înscrie-te acum la cursurile noastre și fă primul pas spre succesul la matematică!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/cursuri" variant="secondary" size="lg" className="text-lg px-8 py-4">
+              Vezi Cursurile
+            </Button>
+            <a 
+              href="https://wa.me/37368217739" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Contactează-ne pe WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
