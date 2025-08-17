@@ -38,7 +38,7 @@ export default function Profesori() {
         'Certificat în pedagogie modernă'
       ],
       bio: 'Catalin Botezat este un profesor dedicat cu o pasiune deosebită pentru matematică. Metodele sale inovatoare de predare au ajutat sute de elevi să înțeleagă concepte complexe și să obțină rezultate excepționale la examene.',
-      photo: '/placeholder-teacher.jpg',
+      photo: '/Catalin_Botezat.jpeg',
       contact: {
         email: 'catalin.botezat@academichub.md',
         phone: '+373 68 217 739'
@@ -136,14 +136,22 @@ export default function Profesori() {
             {teachers.map((teacher) => (
               <div key={teacher.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
                 {/* Teacher Photo */}
-                <div className="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <GraduationCap className="w-12 h-12" />
+                <div className="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center relative overflow-hidden">
+                  {teacher.photo && teacher.photo !== '/placeholder-teacher.jpg' ? (
+                    <img 
+                      src={teacher.photo} 
+                      alt={`${teacher.name} - ${teacher.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-center text-white">
+                      <div className="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <GraduationCap className="w-12 h-12" />
+                      </div>
+                      <h3 className="text-2xl font-bold">{teacher.name}</h3>
+                      <p className="text-green-100">{teacher.title}</p>
                     </div>
-                    <h3 className="text-2xl font-bold">{teacher.name}</h3>
-                    <p className="text-green-100">{teacher.title}</p>
-                  </div>
+                  )}
                 </div>
 
                 {/* Teacher Info */}
