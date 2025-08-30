@@ -113,7 +113,7 @@ export default function Home() {
                 <Users className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Grupuri Mici</h3>
-              <p className="text-gray-600">Maximum 5-6 elevi per grup pentru atenție personalizată</p>
+              <p className="text-gray-600">Maximum 3-5 elevi per grup pentru atenție personalizată</p>
             </div>
             
             <div className="text-center">

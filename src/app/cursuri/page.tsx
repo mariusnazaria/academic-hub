@@ -222,7 +222,7 @@ export default function Cursuri() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Grupuri Mici</h3>
               <p className="text-gray-600">
-                Maximum 8-10 elevi per grup pentru atenție personalizată
+                Maximum 3-5 elevi per grup pentru atenție personalizată
               </p>
             </div>
 
