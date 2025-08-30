@@ -71,13 +71,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:info@academichub.md" className="hover:text-white transition-colors">
-                  info@academichub.md
+                <a href="mailto:academichubmd@gmail.com" className="hover:text-white transition-colors">
+                  academichubmd@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="w-4 h-4" />
-                <span>Chișinău, Moldova</span>
+                <span>Sciusev 31, Chișinău</span>
               </div>
             </div>
           </div>

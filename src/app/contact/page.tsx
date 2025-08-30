@@ -113,14 +113,14 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@academichub.md",
-      link: "mailto:info@academichub.md",
+      value: "academichubmd@gmail.com",
+      link: "mailto:academichubmd@gmail.com",
       description: "Răspundem în 24 de ore"
     },
     {
       icon: MapPin,
       title: "Adresa",
-      value: "Chișinău, Moldova",
+      value: "Sciusev 31, Chișinău",
       link: "#",
       description: "Centrul AcademicHub.md"
     },
@@ -138,12 +138,12 @@ export default function Contact() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
+      <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Contactează-ne
           </h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#DEF5CC] max-w-3xl mx-auto">
             Suntem aici să te ajutăm! Contactează-ne pentru orice întrebări 
             despre cursurile noastre sau pentru a programa o consultație.
           </p>
@@ -165,13 +165,13 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
               <div key={index} className="text-center">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <info.icon className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <info.icon className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{info.title}</h3>
                 <a 
                   href={info.link}
-                  className="text-green-600 hover:text-green-700 font-medium block mb-2"
+                  className="text-[#4BAD01] hover:text-[#3E8F01] font-medium block mb-2"
                 >
                   {info.value}
                 </a>
@@ -227,7 +227,7 @@ export default function Contact() {
                       name="nume"
                       value={formData.nume}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.nume ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Introduceți numele complet"
@@ -250,7 +250,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.email ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="exemplu@email.com"
@@ -273,7 +273,7 @@ export default function Contact() {
                       name="telefon"
                       value={formData.telefon}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.telefon ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="+373 68 217 739"
@@ -296,7 +296,7 @@ export default function Contact() {
                       name="subiect"
                       value={formData.subiect}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.subiect ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Subiectul mesajului"
@@ -319,7 +319,7 @@ export default function Contact() {
                       rows={4}
                       value={formData.mesaj}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.mesaj ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Scrieți mesajul vostru aici..."
@@ -398,19 +398,19 @@ export default function Contact() {
 
                 <div className="bg-green-50 rounded-xl p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Contactează-ne pe WhatsApp
+                    Contactare pe Viber
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Pentru răspunsuri rapide, poți să ne contactezi direct pe WhatsApp.
+                    Pentru răspunsuri rapide, poți să ne contactezi direct pe Viber.
                   </p>
                   <a 
                     href="https://wa.me/37368217739" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    className="inline-flex items-center justify-center w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    WhatsApp
+                    Viber
                   </a>
                 </div>
               </div>
@@ -435,7 +435,7 @@ export default function Contact() {
             <div className="text-center text-gray-500">
               <MapPin className="w-16 h-16 mx-auto mb-4" />
               <p className="text-lg">Harta va fi afișată aici</p>
-              <p className="text-sm">Centrul AcademicHub.md, Chișinău, Moldova</p>
+              <p className="text-sm">Centrul AcademicHub.md, Sciusev 31, Chișinău</p>
             </div>
           </div>
         </div>
