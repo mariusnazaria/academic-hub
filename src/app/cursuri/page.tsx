@@ -18,7 +18,7 @@ export default function Cursuri() {
       price: "2100 MDL",
       duration: "5 săptămâni, 10 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
       features: [
         "Materiale didactice complete",
@@ -34,7 +34,7 @@ export default function Cursuri() {
       price: "2700 MDL",
       duration: "7 săptămâni, 13 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
       features: [
         "Materiale didactice",
@@ -49,7 +49,7 @@ export default function Cursuri() {
       price: "2100 MDL",
       duration: "5 săptămâni, 10 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
       features: [
         "Materiale didactice",
@@ -62,9 +62,9 @@ export default function Cursuri() {
       title: "Curs de pregătire pentru BAC",
       description: "Curs complet de pregătire pentru examenul de bacalaureat",
       price: "2000 MDL",
-      duration: "",
+      duration: "4 luni",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Algebră", "Geometrie", "Analiză", "Probabilități"],
       features: [
         "Materiale didactice complete",
@@ -76,12 +76,12 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Curs Integrală",
+      title: "Curs Integrale",
       description: "Curs specializat pe calculul integral și aplicații",
       price: "2000 MDL",
       duration: "5 săptămâni",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Integrale definite", "Integrale nedefinite", "Aplicații"],
       features: [
         "Materiale didactice",
@@ -97,7 +97,7 @@ export default function Cursuri() {
       price: "2000 MDL",
       duration: "8 săptămâni",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Geometrie în spațiu", "Coordonate", "Distanțe"],
       features: [
         "Materiale didactice",
@@ -111,9 +111,9 @@ export default function Cursuri() {
       title: "Curs pe Combinatorica",
       description: "Curs specializat pe combinatorică și probabilități",
       price: "2000 MDL",
-      duration: "6 luni",
+      duration: "4 săptămâni",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Combinatorica", "Permutări", "Combinații"],
       features: [
         "Materiale didactice",
@@ -127,9 +127,9 @@ export default function Cursuri() {
       title: "Curs pe Probabilitate",
       description: "Curs specializat pe teoria probabilităților",
       price: "2000 MDL",
-      duration: "6 luni",
+      duration: "4 saptamani",
       schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 6,
+      maxStudents: 5,
       subjects: ["Probabilități", "Distribuții", "Teste statistice"],
       features: [
         "Materiale didactice",
