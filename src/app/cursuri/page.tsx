@@ -61,7 +61,7 @@ export default function Cursuri() {
     {
       title: "Curs de pregătire pentru BAC",
       description: "Curs complet de pregătire pentru examenul de bacalaureat",
-      price: "2000 MDL",
+      price: "9900 MDL",
       duration: "4 luni, 50 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
@@ -94,7 +94,7 @@ export default function Cursuri() {
     {
       title: "Curs Geometrie",
       description: "Curs specializat pe geometria tridimensională",
-      price: "2000 MDL",
+      price: "1600 MDL",
       duration: "4 săptămâni, 8 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
@@ -110,7 +110,7 @@ export default function Cursuri() {
     {
       title: "Curs pe Combinatorică",
       description: "Curs specializat pe combinatorică și probabilități",
-      price: "2000 MDL",
+      price: "1600 MDL",
       duration: "4 săptămâni, 8 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
@@ -126,7 +126,7 @@ export default function Cursuri() {
     {
       title: "Curs pe Probabilități",
       description: "Curs specializat pe teoria probabilităților",
-      price: "2000 MDL",
+      price: "1600 MDL",
       duration: "4 săptămâni, 8 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,

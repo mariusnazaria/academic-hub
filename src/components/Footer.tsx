@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#58CC01] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
               <span className="text-xl font-bold">AcademicHub.md</span>
@@ -24,7 +24,7 @@ export default function Footer() {
                 href="https://wa.me/37368217739" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors"
+                className="bg-[#58CC01] hover:bg-[#4BAD01] text-white p-2 rounded-lg transition-colors"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-5 h-5" />

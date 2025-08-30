@@ -48,13 +48,13 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-white py-20">
+      <section className="bg-gradient-to-br from-[#EEFAE6] to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 Pregătire la{' '}
-                <span className="text-green-600">Matematică</span>
+                <span className="text-[#4BAD01]">Matematică</span>
                 <br />
                 de Calitate
               </h1>
@@ -72,7 +72,7 @@ export default function Home() {
                   href="https://wa.me/37368217739" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-green-500 text-green-600 rounded-lg font-medium text-lg hover:bg-green-50 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#58CC01] text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-[#EEFAE6] transition-colors"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp
@@ -80,15 +80,15 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-green-500 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-[#58CC01] rounded-2xl p-8 shadow-2xl">
                 <div className="text-center text-white">
                   <div className="text-6xl font-bold mb-4">A+</div>
                   <div className="text-xl font-medium">AcademicHub.md</div>
-                  <div className="text-green-100 mt-2">Centru de Excelență</div>
+                  <div className="text-[#DEF5CC] mt-2">Centru de Excelență</div>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 bg-white rounded-full p-4 shadow-lg">
-                <TrendingUp className="w-8 h-8 text-green-500" />
+                <TrendingUp className="w-8 h-8 text-[#58CC01]" />
               </div>
             </div>
           </div>
@@ -109,32 +109,32 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-green-600" />
+              <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Grupuri Mici</h3>
               <p className="text-gray-600">Maximum 3-5 elevi per grup pentru atenție personalizată</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-green-600" />
+              <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="w-8 h-8 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Sute de Exerciții</h3>
               <p className="text-gray-600">Materiale practice complete pentru fiecare lecție</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-green-600" />
+              <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Profesori Experimentați</h3>
               <p className="text-gray-600">Echipa noastră are peste 4 ani de experiență</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-green-600" />
+              <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-8 h-8 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">90%+ Rata de Succes</h3>
               <p className="text-gray-600">Media noastră la bac este 8.20, comparabilă cu media liceelor de top din Moldova</p>
@@ -158,15 +158,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link href="/cursuri" className="group">
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <BookOpen className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <BookOpen className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Cursuri</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Cursuri specializate pentru clasele 9 și 12, cu programe personalizate 
                   și materiale didactice complete.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
+                <div className="flex items-center text-[#4BAD01] font-medium group-hover:text-[#3E8F01] mt-auto">
                   Vezi cursurile
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -175,15 +175,15 @@ export default function Home() {
             
             <Link href="/profesori" className="group">
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Users className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Users className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Profesori</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Cunoaște echipa noastră de profesori experimentați, 
                   specializați în pregătirea la matematică.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
+                <div className="flex items-center text-[#4BAD01] font-medium group-hover:text-[#3E8F01] mt-auto">
                   Cunoaște profesorii
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -192,15 +192,15 @@ export default function Home() {
             
             <Link href="/simulare" className="group">
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Award className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Award className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Simulare</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Simulări de examen în condiții reale pentru a-ți testa 
                   cunoștințele și a te familiariza cu formatul.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
+                <div className="flex items-center text-[#4BAD01] font-medium group-hover:text-[#3E8F01] mt-auto">
                   Înscrie-te la simulare
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -209,14 +209,14 @@ export default function Home() {
             
             <Link href="/rezolvari" className="group">
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <BookOpen className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <BookOpen className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Rezolvări</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
                   Rezolvări ale culegerii de probleme AcademicHub.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
+                <div className="flex items-center text-[#4BAD01] font-medium group-hover:text-[#3E8F01] mt-auto">
                   Vezi rezolvările
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -302,7 +302,7 @@ export default function Home() {
                 >
                   <span className="font-medium text-gray-900">{faq.question}</span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-green-500" />
+                    <ChevronUp className="w-5 h-5 text-[#58CC01]" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-gray-400" />
                   )}
@@ -319,12 +319,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Gata să Începi?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl text-[#DEF5CC] mb-8">
             Înscrie-te acum la cursurile noastre și fă primul pas spre succesul la matematică!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -335,7 +335,7 @@ export default function Home() {
               href="https://wa.me/37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               Contactează-ne pe WhatsApp

@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#58CC01] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">A</span>
             </div>
             <span className="text-xl font-bold text-gray-900">AcademicHub.md</span>
@@ -25,37 +25,37 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               href="/cursuri" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Cursuri
             </Link>
             <Link 
               href="/profesori" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Profesori
             </Link>
             <Link 
               href="/simulare" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Simulare
             </Link>
             <Link 
               href="/rezolvari" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Rezolvări
             </Link>
             <Link 
               href="/despre" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Despre Noi
             </Link>
             <Link 
               href="/contact" 
-              className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-[#4BAD01] transition-colors font-medium"
             >
               Contact
             </Link>
@@ -65,7 +65,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <a 
               href="tel:+37368217739" 
-              className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors"
+              className="flex items-center space-x-2 text-[#4BAD01] hover:text-[#3E8F01] transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span className="font-medium">+373 68 217 739</span>
@@ -74,7 +74,7 @@ export default function Header() {
               href="https://wa.me/37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
+              className="bg-[#58CC01] hover:bg-[#4BAD01] text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
@@ -84,7 +84,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-[#4BAD01] hover:bg-gray-100 transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -96,42 +96,42 @@ export default function Header() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link 
                 href="/cursuri" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Cursuri
               </Link>
               <Link 
                 href="/profesori" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Profesori
               </Link>
               <Link 
                 href="/simulare" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Simulare
               </Link>
                               <Link 
                   href="/rezolvari" 
-                  className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                  className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Rezolvări
                 </Link>
               <Link 
                 href="/despre" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Despre Noi
               </Link>
               <Link 
                 href="/contact" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 hover:text-[#4BAD01] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
@@ -139,7 +139,7 @@ export default function Header() {
               <div className="pt-4 border-t">
                 <a 
                   href="tel:+37368217739" 
-                  className="flex items-center space-x-2 px-3 py-2 text-green-600 hover:text-green-700 transition-colors"
+                  className="flex items-center space-x-2 px-3 py-2 text-[#4BAD01] hover:text-[#3E8F01] transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">+373 68 217 739</span>
@@ -148,7 +148,7 @@ export default function Header() {
                   href="https://wa.me/37368217739" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block mt-2 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg transition-colors text-center"
+                  className="block mt-2 bg-[#58CC01] hover:bg-[#4BAD01] text-white px-3 py-2 rounded-lg transition-colors text-center"
                 >
                   WhatsApp
                 </a>

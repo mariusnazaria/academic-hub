@@ -21,69 +21,12 @@ export default function Rezolvari() {
   const solutions = [
     {
       id: 1,
-      title: 'Rezolvarea ecuațiilor de gradul II',
-      subject: 'algebra',
-      difficulty: 'Mediu',
-      class: 'Clasa 9',
-      description: 'Metode complete de rezolvare a ecuațiilor de gradul II cu exemple practice',
-      topics: ['Ecuații de gradul II', 'Formulele lui Viète', 'Discriminantul'],
-      downloadCount: 245,
-      viewCount: 1234
-    },
-    {
-      id: 2,
-      title: 'Probleme de geometrie plană',
-      subject: 'geometrie',
-      difficulty: 'Avansat',
-      class: 'Clasa 9-12',
-      description: 'Colecție de probleme de geometrie plană cu rezolvări detaliate',
-      topics: ['Triunghiuri', 'Cercuri', 'Poligoane', 'Arii și perimetre'],
-      downloadCount: 189,
-      viewCount: 987
-    },
-    {
-      id: 3,
-      title: 'Identități trigonometrice',
-      subject: 'trigonometrie',
-      difficulty: 'Avansat',
-      class: 'Clasa 10-12',
-      description: 'Demonstrarea identităților trigonometrice fundamentale',
-      topics: ['Identități fundamentale', 'Formule de adunare', 'Formule de dublare'],
-      downloadCount: 156,
-      viewCount: 756
-    },
-    {
-      id: 4,
-      title: 'Derivate și aplicații',
-      subject: 'analiza',
-      difficulty: 'Avansat',
-      class: 'Clasa 11-12',
-      description: 'Calculul derivatelor și aplicațiile lor în probleme practice',
-      topics: ['Reguli de derivare', 'Derivate compuse', 'Aplicații geometrice'],
-      downloadCount: 203,
-      viewCount: 1123
-    },
-    {
-      id: 5,
-      title: 'Probleme de combinatorică',
-      subject: 'probabilitati',
-      difficulty: 'Mediu',
-      class: 'Clasa 9-12',
-      description: 'Rezolvarea problemelor de combinatorică cu metode sistematice',
-      topics: ['Permutări', 'Combinații', 'Aranjamente', 'Principiul multiplicativ'],
-      downloadCount: 134,
-      viewCount: 678
-    },
-    {
-      id: 6,
-      title: 'Inegalități algebrice',
-      subject: 'algebra',
-      difficulty: 'Avansat',
-      class: 'Clasa 9-12',
-      description: 'Metode de rezolvare a inegalităților algebrice complexe',
-      topics: ['Inegalități de gradul I', 'Inegalități de gradul II', 'Metoda intervalelor'],
-      downloadCount: 178,
-      viewCount: 892
+      title: 'Rezolvări Cartea de Teste pentru Profilul Real',
+      subject: 'all',
+      difficulty: 'Complet',
+      class: 'Clasa 12',
+      description: 'Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profilul real',
+      topics: ['Algebră', 'Geometrie', 'Trigonometrie', 'Analiză Matematică', 'Probabilități']
     }
   ];
 
@@ -99,14 +42,14 @@ export default function Rezolvari() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
+      <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Rezolvări ale Culegerii de Probleme
+            Rezolvări Cartea de Teste pentru Profilul Real
           </h1>
           <p className="text-xl text-green-100 max-w-3xl mx-auto">
-            Găsește soluții detaliate pentru problemele de matematică din culegerea AcademicHub. 
-            Rezolvări pas cu pas pentru toate nivelurile.
+            Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profilul real. 
+            Materiale de calitate pentru pregătirea la bacalaureat.
           </p>
         </div>
       </section>
@@ -123,7 +66,7 @@ export default function Rezolvari() {
                 placeholder="Caută rezolvări..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#58CC01] focus:border-transparent"
               />
             </div>
             
@@ -133,7 +76,7 @@ export default function Rezolvari() {
               <select
                 value={selectedSubject}
                 onChange={(e) => setSelectedSubject(e.target.value)}
-                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#58CC01] focus:border-transparent"
               >
                 {subjects.map(subject => (
                   <option key={subject.id} value={subject.id}>
@@ -151,10 +94,10 @@ export default function Rezolvari() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Rezolvări Disponibile
+              Rezolvări Complete
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {filteredSolutions.length} rezolvări găsite pentru {selectedSubject === 'all' ? 'toate materiile' : subjects.find(s => s.id === selectedSubject)?.name.toLowerCase()}
+              Rezolvări detaliate pentru toate problemele din cartea de teste pentru profilul real
             </p>
           </div>
 
@@ -173,6 +116,7 @@ export default function Rezolvari() {
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                         solution.difficulty === 'Avansat' ? 'bg-red-100 text-red-800' :
                         solution.difficulty === 'Mediu' ? 'bg-yellow-100 text-yellow-800' :
+                        solution.difficulty === 'Complet' ? 'bg-[#DEF5CC] text-[#4BAD01]' :
                         'bg-green-100 text-green-800'
                       }`}>
                         {solution.difficulty}
@@ -204,20 +148,11 @@ export default function Rezolvari() {
                       </div>
                     </div>
                     
-                    <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                      <span className="flex items-center gap-1">
-                        <Eye className="w-4 h-4" />
-                        {solution.viewCount} vizualizări
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Download className="w-4 h-4" />
-                        {solution.downloadCount} descărcări
-                      </span>
-                    </div>
+
                     
-                    <button className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <button className="w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
                       <Download className="w-4 h-4" />
-                      Descarcă Rezolvarea
+                      Vezi Rezolvările
                     </button>
                   </div>
                 </div>
@@ -228,24 +163,24 @@ export default function Rezolvari() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ai nevoie de ajutor cu o problemă specifică?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl text-[#DEF5CC] mb-8">
             Contactează-ne pentru a primi rezolvări personalizate sau pentru a te înscrie la cursurile noastre!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
             >
               Contactează-ne
             </a>
             <a
               href="/cursuri"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-medium text-lg hover:bg-white hover:text-green-600 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-medium text-lg hover:bg-white hover:text-[#4BAD01] transition-colors"
             >
               Vezi Cursurile
             </a>
