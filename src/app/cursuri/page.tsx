@@ -156,12 +156,12 @@ export default function Cursuri() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
+      <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Cursuri de Matematică
           </h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#DEF5CC] max-w-3xl mx-auto">
             Programe personalizate pentru clasele 9 și 12, cu profesori experimentați 
             și materiale didactice complete. Rezultate garantate!
           </p>
@@ -240,12 +240,12 @@ export default function Cursuri() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Gata să Începi?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+                      <p className="text-xl text-[#DEF5CC] mb-8">
             Înscrie-te acum la cursul potrivit pentru tine și fă primul pas spre succesul la matematică!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

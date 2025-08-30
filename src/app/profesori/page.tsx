@@ -100,12 +100,12 @@ export default function Profesori() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
+      <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Profesorii Noștri
           </h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#DEF5CC] max-w-3xl mx-auto">
             Echipa de profesori experimentați care transformă matematica 
             într-o experiență de învățare plăcută și eficientă
           </p>
@@ -143,7 +143,7 @@ export default function Profesori() {
                         <GraduationCap className="w-12 h-12" />
                       </div>
                       <h3 className="text-2xl font-bold">{teacher.name}</h3>
-                      <p className="text-green-100">{teacher.title}</p>
+                      <p className="text-[#DEF5CC]">{teacher.title}</p>
                     </div>
                   )}
                 </div>
@@ -184,7 +184,7 @@ export default function Profesori() {
                   <div className="space-y-3">
                     <button
                       onClick={() => toggleTeacher(teacher.id)}
-                      className="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-colors font-medium"
+                      className="w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white py-2 px-4 rounded-lg transition-colors font-medium"
                     >
                       {selectedTeacher === teacher.id ? 'Ascunde Detalii' : 'Vezi Detalii Complete'}
                     </button>
@@ -276,12 +276,12 @@ export default function Profesori() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Vrei să Înveți cu Profesorii Noștri?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+                      <p className="text-xl text-[#DEF5CC] mb-8">
             Înscrie-te acum la cursurile noastre și beneficiezi de expertiza 
             profesorilor cu cea mai mare experiență din Moldova!
           </p>
