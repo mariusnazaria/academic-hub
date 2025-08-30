@@ -64,7 +64,7 @@ export default function DespreNoi() {
 
   const achievements = [
     {
-      number: "1000+",
+      number: "2000+",
       label: "Elevi Pregătiți cu Succes"
     },
     {
@@ -72,15 +72,15 @@ export default function DespreNoi() {
       label: "Rata de Succes la Examene"
     },
     {
-      number: "10+",
+      number: "4+",
       label: "Ani de Experiență"
     },
     {
-      number: "500+",
+      number: "2000+",
       label: "Ore de Predare"
     },
     {
-      number: "50+",
+      number: "27+",
       label: "Materiale Didactice"
     },
     {
@@ -94,12 +94,12 @@ export default function DespreNoi() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
+      <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Despre Noi
           </h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#DEF5CC] max-w-3xl mx-auto">
             AcademicHub.md este centrul de excelență pentru pregătirea la matematică din Moldova, 
             dedicat transformării vieții elevilor prin educație de calitate.
           </p>
@@ -127,9 +127,9 @@ export default function DespreNoi() {
                 transformăm dificultățile în oportunități și transformăm visele academice în realitate.
               </p>
             </div>
-            <div className="bg-green-50 rounded-2xl p-8">
+            <div className="bg-[#EEFAE6] rounded-2xl p-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-[#58CC01] rounded-full flex items-center justify-center mx-auto mb-6">
                   <Target className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Viziunea Noastră</h3>
@@ -158,8 +158,8 @@ export default function DespreNoi() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-green-600" />
+                <div className="bg-[#DEF5CC] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="w-8 h-8 text-[#4BAD01]" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -185,7 +185,7 @@ export default function DespreNoi() {
             {methodology.map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6">
                 <div className="flex items-start">
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">
+                  <div className="bg-[#58CC01] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">
                     {index + 1}
                   </div>
                   <div>
@@ -214,7 +214,7 @@ export default function DespreNoi() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-[#4BAD01] mb-2">
                   {achievement.number}
                 </div>
                 <div className="text-sm text-gray-600 leading-tight">
@@ -240,8 +240,8 @@ export default function DespreNoi() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-green-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-12 h-12 text-green-600" />
+              <div className="bg-[#DEF5CC] w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-12 h-12 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Catalin Botezat</h3>
               <p className="text-gray-600 mb-2">Profesor Principal</p>
@@ -249,8 +249,8 @@ export default function DespreNoi() {
             </div>
 
             <div className="text-center">
-              <div className="bg-green-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-12 h-12 text-green-600" />
+              <div className="bg-[#DEF5CC] w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-12 h-12 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Dragos Bahov</h3>
               <p className="text-gray-600 mb-2">Profesor Avansat</p>
@@ -258,8 +258,8 @@ export default function DespreNoi() {
             </div>
 
             <div className="text-center">
-              <div className="bg-green-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-12 h-12 text-green-600" />
+              <div className="bg-[#DEF5CC] w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-12 h-12 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Ovidiu Harunjen</h3>
               <p className="text-gray-600 mb-2">Profesor pentru Începători</p>
@@ -270,12 +270,12 @@ export default function DespreNoi() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Vrei să Afli Mai Multe?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl text-[#DEF5CC] mb-8">
             Contactează-ne pentru a afla cum putem să te ajutăm să-ți atingi obiectivele academice!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -286,7 +286,7 @@ export default function DespreNoi() {
               href="https://wa.me/37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               WhatsApp
