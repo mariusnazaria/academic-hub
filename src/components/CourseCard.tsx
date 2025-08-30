@@ -31,7 +31,7 @@ export default function CourseCard({
 
   return (
     <div
-      className={`bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 ${
+      className={`bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col ${
         isHovered ? 'shadow-xl transform -translate-y-1' : ''
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -52,7 +52,7 @@ export default function CourseCard({
       </div>
 
       {/* Course Details */}
-      <div className="p-6 space-y-4">
+      <div className="p-6 space-y-4 flex-grow">
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-2 text-gray-600">
             <Clock className="w-4 h-4 text-green-500" />
@@ -102,7 +102,7 @@ export default function CourseCard({
       </div>
 
       {/* CTA Button */}
-      <div className="p-6 pt-0">
+      <div className="p-6 pt-0 mt-auto">
         <Button
           onClick={() => onEnroll(title)}
           variant="primary"
