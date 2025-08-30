@@ -102,7 +102,7 @@ export default function Rezolvari() {
       <section className="bg-gradient-to-r from-green-600 to-green-700 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Rezolvari ale Culegerii de Probleme
+            Rezolvări ale Culegerii de Probleme
           </h1>
           <p className="text-xl text-green-100 max-w-3xl mx-auto">
             Găsește soluții detaliate pentru problemele de matematică din culegerea AcademicHub. 

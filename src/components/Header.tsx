@@ -45,7 +45,7 @@ export default function Header() {
               href="/rezolvari" 
               className="text-gray-700 hover:text-green-600 transition-colors font-medium"
             >
-              Rezolvari
+              Rezolvări
             </Link>
             <Link 
               href="/despre" 
@@ -115,13 +115,13 @@ export default function Header() {
               >
                 Simulare
               </Link>
-              <Link 
-                href="/rezolvari" 
-                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Rezolvari
-              </Link>
+                              <Link 
+                  href="/rezolvari" 
+                  className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Rezolvări
+                </Link>
               <Link 
                 href="/despre" 
                 className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"

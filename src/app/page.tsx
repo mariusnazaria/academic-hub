@@ -212,12 +212,12 @@ export default function Home() {
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <BookOpen className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Rezolvari</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Rezolvări</h3>
                 <p className="text-gray-600 mb-6">
-                  Rezolvari ale culegerii de probleme AcademicHub.
+                  Rezolvări ale culegerii de probleme AcademicHub.
                 </p>
                 <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
-                  Vezi rezolvarile
+                  Vezi rezolvările
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
