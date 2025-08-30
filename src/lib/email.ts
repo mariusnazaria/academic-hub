@@ -162,11 +162,11 @@ export async function sendEnrollmentConfirmation(userData: {
             <li>Veți primi programul exact și materialele necesare</li>
           </ol>
           
-          <p><strong>Important:</strong> Înregistrarea finală va fi în funcție de testul de evaluare și disponibilitatea locurilor în grup.</p>
+          <p><strong>Important:</strong> Înregistrarea finală va fi în funcție de testul de evaluare și disponibilitatea locurilor în grup. Datele Dvs. au fost salvate în sistemul nostru.</p>
           
           <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 20px 0;">
             <p style="margin: 0; color: #166534;"><strong>📞 Contact:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 Viber:</strong> +373 68 217 739</p>
+             <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 Viber:</strong> +373 68 217 739</p>
             <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> academichubmd@gmail.com</p>
           </div>
           

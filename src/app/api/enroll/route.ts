@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { writeFile, appendFile, readFile } from 'fs/promises';
-import { existsSync } from 'fs';
-import path from 'path';
-import { sendEnrollmentDataToAdmin, sendEnrollmentConfirmation } from '@/lib/email';
+import { sendEnrollmentConfirmation } from '@/lib/email';
 
 // Define enrollment interface
 interface EnrollmentData {
@@ -14,39 +11,8 @@ interface EnrollmentData {
   status: string;
 }
 
-// Helper function to get all enrollments for admin email
-async function getAllEnrollments() {
-  try {
-    const csvPath = path.join(process.cwd(), 'enrollments.csv');
-    if (!existsSync(csvPath)) return [];
-    
-    const content = await readFile(csvPath, 'utf8');
-    const lines = content.trim().split('\n');
-    const headers = lines[0].split(',');
-    
-    return lines.slice(1).map(line => {
-      const values = line.split(',');
-      const enrollment: EnrollmentData = {
-        nume: '',
-        email: '',
-        telefon: '',
-        course: '',
-        date: '',
-        status: ''
-      };
-      headers.forEach((header, index) => {
-        const key = header.toLowerCase() as keyof EnrollmentData;
-        if (key in enrollment) {
-          enrollment[key] = values[index] || '';
-        }
-      });
-      return enrollment;
-    });
-  } catch (error) {
-    console.error('Error reading enrollments:', error);
-    return [];
-  }
-}
+// Google Apps Script Web App URL - Replace with your actual deployed URL
+const GOOGLE_APPS_SCRIPT_URL = process.env.GOOGLE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
 
 export async function POST(request: NextRequest) {
   try {
@@ -71,23 +37,27 @@ export async function POST(request: NextRequest) {
       status: 'pending'
     };
 
-    // Create CSV header if file doesn't exist
-    const csvHeader = 'Nume,Email,Telefon,Curs,Data,Status\n';
-    const csvRow = `${enrollmentData.nume},${enrollmentData.email},${enrollmentData.telefon},${enrollmentData.course},${enrollmentData.date},${enrollmentData.status}\n`;
+    // Send data to Google Sheets via Apps Script
+    const googleResponse = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(enrollmentData),
+    });
 
-    // Save to CSV file
-    const csvPath = path.join(process.cwd(), 'enrollments.csv');
+    if (!googleResponse.ok) {
+      throw new Error('Failed to save to Google Sheets');
+    }
+
+    const googleResult = await googleResponse.json();
     
-    if (!existsSync(csvPath)) {
-      // Create new file with header
-      await writeFile(csvPath, csvHeader + csvRow, 'utf8');
-    } else {
-      // Append to existing file
-      await appendFile(csvPath, csvRow, 'utf8');
+    if (!googleResult.success) {
+      throw new Error(googleResult.error || 'Failed to save enrollment data');
     }
 
     // Log enrollment (for development)
-    console.log('New enrollment:', enrollmentData);
+    console.log('New enrollment saved to Google Sheets:', enrollmentData);
 
     // Send confirmation email to user
     await sendEnrollmentConfirmation({
@@ -95,10 +65,6 @@ export async function POST(request: NextRequest) {
       email: enrollmentData.email,
       curs: enrollmentData.course
     });
-
-    // Send enrollment data to admin (with CSV attachment)
-    const allEnrollments = await getAllEnrollments();
-    await sendEnrollmentDataToAdmin(allEnrollments);
 
     // Return success response
     return NextResponse.json({
