@@ -248,7 +248,7 @@ export default function Home() {
                               <p className="text-gray-700 mb-4">
                   &ldquo;Datorită cursurilor de la AcademicHub.md am reușit să obțin 10 la examenul de matematică. Profesorii sunt excepționali!&rdquo;
                 </p>
-              <div className="font-medium text-gray-900">Maria Popescu</div>
+              <div className="font-medium text-gray-900">Maria Rusu</div>
               <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
             </div>
             
@@ -261,7 +261,7 @@ export default function Home() {
                               <p className="text-gray-700 mb-4">
                   &ldquo;Metodele de predare sunt foarte eficiente. Am înțeles concepte pe care nu le-am înțeles în școală.&rdquo;
                 </p>
-              <div className="font-medium text-gray-900">Alexandru Ionescu</div>
+              <div className="font-medium text-gray-900">Alexandru Negru</div>
               <div className="text-sm text-gray-600">Clasa 9, Chișinău</div>
             </div>
             
@@ -274,7 +274,7 @@ export default function Home() {
                               <p className="text-gray-700 mb-4">
                   &ldquo;Grupurile mici permit atenția personalizată. Am progresat foarte mult în doar câteva luni.&rdquo;
                 </p>
-              <div className="font-medium text-gray-900">Elena Dumitrescu</div>
+              <div className="font-medium text-gray-900">Elena Dumitrache</div>
               <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
             </div>
           </div>
