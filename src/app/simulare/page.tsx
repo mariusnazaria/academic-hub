@@ -112,10 +112,12 @@ export default function Simulare() {
   };
 
   const simulationDates = [
-    { date: '2024-03-15', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-03-22', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-04-05', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-04-12', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' }
+    { date: '2024-10-15', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-10-22', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-11-05', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-11-12', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-12-03', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-12-10', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' }
   ];
 
   return (
@@ -175,7 +177,7 @@ export default function Simulare() {
                 <div className="space-y-3 text-left">
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Durată: 3 ore</span>
+                    <span className="text-gray-700">Durată: 2 ore</span>
                   </div>
                   <div className="flex items-center">
                     <BookOpen className="w-5 h-5 text-green-500 mr-3" />
@@ -208,7 +210,7 @@ export default function Simulare() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {simulationDates.map((sim, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                 <div className="text-center">
