@@ -129,7 +129,7 @@ export default function Home() {
                 <Award className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Profesori Experimentați</h3>
-              <p className="text-gray-600">Echipa noastră are peste 10 ani de experiență</p>
+              <p className="text-gray-600">Echipa noastră are peste 4 ani de experiență</p>
             </div>
             
             <div className="text-center">
@@ -137,7 +137,7 @@ export default function Home() {
                 <TrendingUp className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">90%+ Rata de Succes</h3>
-              <p className="text-gray-600">Elevii noștri reușesc la examene în proporție de peste 90%</p>
+              <p className="text-gray-600">Media noastră la bac este 8.20, comparabilă cu media liceelor de top din Moldova</p>
             </div>
           </div>
         </div>
@@ -157,16 +157,16 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link href="/cursuri" className="group">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <BookOpen className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Cursuri</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 flex-grow">
                   Cursuri specializate pentru clasele 9 și 12, cu programe personalizate 
                   și materiale didactice complete.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
                   Vezi cursurile
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -174,16 +174,16 @@ export default function Home() {
             </Link>
             
             <Link href="/profesori" className="group">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Users className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Profesori</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 flex-grow">
                   Cunoaște echipa noastră de profesori experimentați, 
                   specializați în pregătirea la matematică.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
                   Cunoaște profesorii
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -191,16 +191,16 @@ export default function Home() {
             </Link>
             
             <Link href="/simulare" className="group">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Award className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Simulare</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 flex-grow">
                   Simulări de examen în condiții reale pentru a-ți testa 
                   cunoștințele și a te familiariza cu formatul.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
                   Înscrie-te la simulare
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -208,15 +208,15 @@ export default function Home() {
             </Link>
             
             <Link href="/rezolvari" className="group">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 flex flex-col h-full">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <BookOpen className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Rezolvări</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 flex-grow">
                   Rezolvări ale culegerii de probleme AcademicHub.
                 </p>
-                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700">
+                <div className="flex items-center text-green-600 font-medium group-hover:text-green-700 mt-auto">
                   Vezi rezolvările
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
