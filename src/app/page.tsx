@@ -69,13 +69,13 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
                 <a 
-                  href="https://wa.me/37368217739" 
+                  href="https://invite.viber.com/?g=37368217739" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#58CC01] text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-[#EEFAE6] transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#6D28D9] text-[#6D28D9] rounded-lg font-medium text-lg hover:bg-[#F3E8FF] transition-colors"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp
+                  Viber
                 </a>
               </div>
             </div>
@@ -332,13 +332,13 @@ export default function Home() {
               Vezi Cursurile
             </Button>
             <a 
-              href="https://wa.me/37368217739" 
+              href="https://invite.viber.com/?g=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#4BAD01] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#6D28D9] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Contactează-ne pe WhatsApp
+              Contactează-ne pe Viber
             </a>
           </div>
         </div>

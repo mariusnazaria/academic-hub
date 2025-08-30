@@ -272,7 +272,7 @@ export default function Termeni() {
                 <div className="space-y-2 text-sm text-gray-600">
                   <p>• Email: info@academichub.md</p>
                   <p>• Telefon: +373 68 217 739</p>
-                  <p>• WhatsApp: +373 68 217 739</p>
+                  <p>• Viber: +373 68 217 739</p>
                   <p>• Adresa: Centrul AcademicHub.md, Chișinău, Moldova</p>
                 </div>
               </div>

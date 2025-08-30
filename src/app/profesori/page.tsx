@@ -290,13 +290,13 @@ export default function Profesori() {
               Vezi Cursurile
             </Button>
             <a 
-              href="https://wa.me/37368217739" 
+              href="https://invite.viber.com/?g=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#6D28D9] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Contactează-ne pe WhatsApp
+              Contactează-ne pe Viber
             </a>
           </div>
         </div>

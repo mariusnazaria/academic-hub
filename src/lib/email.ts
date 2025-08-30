@@ -166,8 +166,8 @@ export async function sendEnrollmentConfirmation(userData: {
           
           <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 20px 0;">
             <p style="margin: 0; color: #166534;"><strong>📞 Contact:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 WhatsApp:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> info@academichub.md</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 Viber:</strong> +373 68 217 739</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> academichubmd@gmail.com</p>
           </div>
           
           <p>Cu stimă,<br><strong>Echipa AcademicHub.md</strong></p>
@@ -213,8 +213,8 @@ export async function sendContactConfirmation(userData: {
           
           <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 20px 0;">
             <p style="margin: 0; color: #166534;"><strong>📞 Contact:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 WhatsApp:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> info@academichub.md</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 Viber:</strong> +373 68 217 739</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> academichubmd@gmail.com</p>
           </div>
           
           <p>Cu stimă,<br><strong>Echipa AcademicHub.md</strong></p>
@@ -278,8 +278,8 @@ export async function sendSimulationConfirmation(userData: {
           
           <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 20px 0;">
             <p style="margin: 0; color: #166534;"><strong>📞 Contact:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 WhatsApp:</strong> +373 68 217 739</p>
-            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> info@academichub.md</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📱 Viber:</strong> +373 68 217 739</p>
+            <p style="margin: 5px 0 0 0; color: #166534;"><strong>📧 Email:</strong> academichubmd@gmail.com</p>
           </div>
           
           <p>Cu stimă,<br><strong>Echipa AcademicHub.md</strong></p>

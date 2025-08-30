@@ -396,7 +396,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="bg-green-50 rounded-xl p-8">
+                <div className="bg-[#F3E8FF] rounded-xl p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     Contactare pe Viber
                   </h3>
@@ -404,10 +404,10 @@ export default function Contact() {
                     Pentru răspunsuri rapide, poți să ne contactezi direct pe Viber.
                   </p>
                   <a 
-                    href="https://wa.me/37368217739" 
+                    href="https://invite.viber.com/?g=37368217739" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    className="inline-flex items-center justify-center w-full bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Viber

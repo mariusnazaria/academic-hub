@@ -20,13 +20,13 @@ export default function Footer() {
               și materiale didactice complete.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://wa.me/37368217739" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#58CC01] hover:bg-[#4BAD01] text-white p-2 rounded-lg transition-colors"
-                aria-label="WhatsApp"
-              >
+                          <a 
+              href="https://invite.viber.com/?g=37368217739" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white p-2 rounded-lg transition-colors" 
+              aria-label="Viber"
+            >
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>

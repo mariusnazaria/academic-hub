@@ -71,13 +71,13 @@ export default function Header() {
               <span className="font-medium">+373 68 217 739</span>
             </a>
             <a 
-              href="https://wa.me/37368217739" 
+              href="https://invite.viber.com/?g=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-[#58CC01] hover:bg-[#4BAD01] text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
+              className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp</span>
+              <span>Viber</span>
             </a>
           </div>
 
@@ -145,12 +145,12 @@ export default function Header() {
                   <span className="font-medium">+373 68 217 739</span>
                 </a>
                 <a 
-                  href="https://wa.me/37368217739" 
+                  href="https://invite.viber.com/?g=37368217739" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block mt-2 bg-[#58CC01] hover:bg-[#4BAD01] text-white px-3 py-2 rounded-lg transition-colors text-center"
+                  className="block mt-2 bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-3 py-2 rounded-lg transition-colors text-center"
                 >
-                  WhatsApp
+                  Viber
                 </a>
               </div>
             </div>

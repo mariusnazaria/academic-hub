@@ -256,12 +256,12 @@ export default function Cursuri() {
               Înscrie-te Acum
             </button>
             <a 
-              href="https://wa.me/37368217739" 
+              href="https://invite.viber.com/?g=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-[#6D28D9] transition-colors"
             >
-              Contactează-ne pe WhatsApp
+              Contactează-ne pe Viber
             </a>
           </div>
         </div>
