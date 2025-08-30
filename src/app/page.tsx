@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       question: "Câte elevi sunt într-un grup?",
-      answer: "Grupurile sunt mici, cu maximum 8-10 elevi, pentru a asigura atenția personalizată a profesorului și o experiență de învățare optimă."
+      answer: "Grupurile sunt mici, cu maximum 3-5 elevi, pentru a asigura atenția personalizată a profesorului și o experiență de învățare optimă."
     },
     {
       question: "Oferiți materiale didactice?",
@@ -246,7 +246,7 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Datorită cursurilor de la AcademicHub.md am reușit să obțin 10 la examenul de matematică. Profesorii sunt excepționali!&rdquo;
+                  &ldquo;Datorită cursurilor de la AcademicHub am reușit să obțin 9 la bac la matematică. Domn Ovidiu explică excelent!&rdquo;
                 </p>
               <div className="font-medium text-gray-900">Maria Rusu</div>
               <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
