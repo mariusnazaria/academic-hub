@@ -60,7 +60,7 @@ export default function Home() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Învață cu profesori experimentați în grupuri mici. 
-                Peste 500 de elevi au reușit cu noi. 
+                Peste 2000 de elevi au reușit cu noi. 
                 Rezultate garantate!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

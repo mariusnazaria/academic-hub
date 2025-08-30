@@ -25,7 +25,7 @@ export default function Profesori() {
         'Rezolvarea problemelor complexe'
       ],
       achievements: [
-        'Peste 500 de elevi pregătiți cu succes',
+        'Peste 2000 de elevi pregătiți cu succes',
         'Rata de succes de 95% la examene',
         'Autor de materiale didactice',
         'Certificat în pedagogie modernă'
