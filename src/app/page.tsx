@@ -259,7 +259,7 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Metodele de predare sunt foarte eficiente. Am înțeles concepte pe care nu le-am înțeles în școală.&rdquo;
+                  &ldquo;Metodele de predare sunt foarte eficiente. În sfârșit am înțeles matematica!&rdquo;
                 </p>
               <div className="font-medium text-gray-900">Alexandru Negru</div>
               <div className="text-sm text-gray-600">Clasa 9, Chișinău</div>
@@ -272,10 +272,10 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Grupurile mici permit atenția personalizată. Am progresat foarte mult în doar câteva luni.&rdquo;
+                  &ldquo;Cartea de geometrie m-a ajutat foarte mult! Nu m-a aștempat vreodata să o învăț&rdquo;
                 </p>
               <div className="font-medium text-gray-900">Elena Dumitrache</div>
-              <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
+              <div className="text-sm text-gray-600">Clasa 12, Ialoveni</div>
             </div>
           </div>
         </div>
