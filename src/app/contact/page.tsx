@@ -404,7 +404,7 @@ export default function Contact() {
                     Pentru răspunsuri rapide, poți să ne contactezi direct pe Viber.
                   </p>
                   <a 
-                    href="https://invite.viber.com/?g=37368217739" 
+                    href="viber://chat?number=37368217739" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center w-full bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-6 py-3 rounded-lg font-medium transition-colors"

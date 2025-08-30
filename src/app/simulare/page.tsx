@@ -465,7 +465,7 @@ export default function Simulare() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://invite.viber.com/?g=37368217739" 
+              href="viber://chat?number=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-[#6D28D9] px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors inline-flex items-center"

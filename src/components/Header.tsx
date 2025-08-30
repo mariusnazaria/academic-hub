@@ -71,7 +71,7 @@ export default function Header() {
               <span className="font-medium">+373 68 217 739</span>
             </a>
             <a 
-              href="https://invite.viber.com/?g=37368217739" 
+              href="viber://chat?number=37368217739" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
@@ -145,7 +145,7 @@ export default function Header() {
                   <span className="font-medium">+373 68 217 739</span>
                 </a>
                 <a 
-                  href="https://invite.viber.com/?g=37368217739" 
+                  href="viber://chat?number=37368217739" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block mt-2 bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-3 py-2 rounded-lg transition-colors text-center"

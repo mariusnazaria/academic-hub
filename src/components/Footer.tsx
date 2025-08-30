@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
                           <a 
-              href="https://invite.viber.com/?g=37368217739" 
+              href="viber://chat?number=37368217739" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white p-2 rounded-lg transition-colors" 
