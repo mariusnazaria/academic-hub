@@ -54,7 +54,7 @@ export default function Home() {
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 Pregătire la{' '}
-                <span className="text-[#4BAD01]">Matematicăl</span>
+                <span className="text-[#4BAD01]">Matematică</span>
                 <br />
                 de Calitate
               </h1>
