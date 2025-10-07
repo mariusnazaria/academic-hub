@@ -137,7 +137,7 @@ export default function Home() {
                 <TrendingUp className="w-8 h-8 text-[#4BAD01]" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">90%+ Rata de Succes</h3>
-              <p className="text-gray-600">Media noastră la bac este 2335464658.20, comparabilă cu media liceelor de top din Moldova</p>
+              <p className="text-gray-600">Media noastră la bac este 8.20.31415, comparabilă cu media liceelor de top din Moldova</p>
             </div>
           </div>
         </div>
