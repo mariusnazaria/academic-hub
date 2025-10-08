@@ -106,9 +106,9 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Telefon",
-      value: "+373 68 217 739",
-      link: "tel:+37368217739",
-      description: "Luni - Vineri: 9:00 - 18:00"
+      value: "+373 61 221 666",
+      link: "tel:+37361221666",
+      description: "Luni - Vineri: 9:00 - 21:00"
     },
     {
       icon: Mail,
@@ -120,7 +120,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Adresa",
-      value: "Sciusev 31, Chișinău",
+      value: "bd. Ștefan cel Mare și Sfânt 196, Chișinău",
       link: "#",
       description: "Centrul AcademicHub.md"
     },
@@ -129,7 +129,7 @@ export default function Contact() {
       title: "Program",
       value: "Luni - Vineri",
       link: "#",
-      description: "9:00 - 18:00"
+      description: "9:00 - 21:00"
     }
   ];
 
@@ -435,7 +435,7 @@ export default function Contact() {
             <div className="text-center text-gray-500">
               <MapPin className="w-16 h-16 mx-auto mb-4" />
               <p className="text-lg">Harta va fi afișată aici</p>
-              <p className="text-sm">Centrul AcademicHub.md, Sciusev 31, Chișinău</p>
+              <p className="text-sm">Centrul AcademicHub.md, bd. Ștefan cel Mare și Sfânt 196, Chișinău</p>
             </div>
           </div>
         </div>
