@@ -276,7 +276,7 @@ export default function Contact() {
                       className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#58CC01] ${
                         errors.telefon ? 'border-red-500' : 'border-gray-300'
                       }`}
-                      placeholder="+373 68 217 739"
+                      placeholder="+373 61 221 666"
                     />
                     {errors.telefon && (
                       <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -404,7 +404,7 @@ export default function Contact() {
                     Pentru răspunsuri rapide, poți să ne contactezi direct pe Viber.
                   </p>
                   <a 
-                    href="viber://chat?number=37368217739" 
+                    href="viber://chat?number=37361221666" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center w-full bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-6 py-3 rounded-lg font-medium transition-colors"
