@@ -25,7 +25,7 @@ export default function Profesori() {
         'Rezolvarea problemelor complexe'
       ],
       achievements: [
-        'Peste 2000 de elevi pregătiți cu succes',
+        'Peste 200 de elevi pregătiți cu succes',
         'Rata de succes de 95% la examene',
         'Autor de materiale didactice',
         'Certificat în pedagogie modernă'
@@ -33,7 +33,7 @@ export default function Profesori() {
       bio: 'Catalin Botezat este un profesor dedicat cu o pasiune deosebită pentru matematică. Metodele sale inovatoare de predare au ajutat sute de elevi să înțeleagă concepte complexe și să obțină rezultate excepționale la examene.',
       photo: '/Catalin_Botezat.jpeg',
       contact: {
-        email: 'catalin.botezat@academichub.md',
+        email: 'catalin.botezat@gmail.com',
         phone: '+373 68 217 739'
       }
     },
@@ -59,8 +59,8 @@ export default function Profesori() {
       bio: 'Dragos Bahov se specializează în matematică avansată și are o abordare sistematică în predare. El ajută elevii să dezvolde gândirea logică și să rezolve probleme complexe cu încredere.',
       photo: '/placeholder-teacher.jpg',
       contact: {
-        email: 'dragos.bahov@academichub.md',
-        phone: '+373 68 217 739'
+        email: 'dragos.bahov@gmail.com',
+        phone: '+373 68 328 612'
       }
     },
     {
@@ -77,7 +77,7 @@ export default function Profesori() {
         'Suport individual pentru elevi'
       ],
       achievements: [
-        'Peste 200 de elevi îndrumați',
+        'Peste 300 de elevi îndrumați',
         'Specialist în predarea pentru clasele mici',
         'Dezvoltator de jocuri educaționale',
         'Certificat în pedagogie specială'
@@ -86,7 +86,7 @@ export default function Profesori() {
       photo: '/placeholder-teacher.jpg',
       contact: {
         email: 'ovidiu.harunjen@academichub.md',
-        phone: '+373 68 217 739'
+        phone: '+373 68 344 512'
       }
     }
   ];
@@ -256,7 +256,7 @@ export default function Profesori() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">2700+</div>
               <div className="text-gray-600">Elevi Pregătiți</div>
             </div>
             <div className="text-center">
@@ -264,11 +264,11 @@ export default function Profesori() {
               <div className="text-gray-600">Rata de Succes</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">10+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">4+</div>
               <div className="text-gray-600">Ani de Experiență</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">500+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">10000+</div>
               <div className="text-gray-600">Ore de Predare</div>
             </div>
           </div>
