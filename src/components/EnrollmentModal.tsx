@@ -183,7 +183,7 @@ export default function EnrollmentModal({ isOpen, onClose, courseTitle }: Enroll
                 className={`w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
                   errors.telefon ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder="+373 68 217 739"
+                placeholder="+373 61 221 666"
               />
               {errors.telefon && (
                 <p className="text-red-500 text-sm mt-1 flex items-center">
