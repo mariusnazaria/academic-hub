@@ -112,12 +112,12 @@ export default function Simulare() {
   };
 
   const simulationDates = [
-    { date: '2024-10-15', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-10-22', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-11-05', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-11-12', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-12-03', time: '10:00', location: 'Centrul AcademicHub.md, Chișinău' },
-    { date: '2024-12-10', time: '14:00', location: 'Centrul AcademicHub.md, Chișinău' }
+    { date: '2024-10-15', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-10-22', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-11-05', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-11-12', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-12-03', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' },
+    { date: '2024-12-10', time: '16:00', location: 'Centrul AcademicHub.md, Chișinău' }
   ];
 
   return (
@@ -460,7 +460,7 @@ export default function Simulare() {
       <section className="py-20 bg-[#4BAD01]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ai Întrebări despre Simulări?
+            Ai întrebări despre Simulări?
           </h2>
                       <p className="text-xl text-[#DEF5CC] mb-8">
             Contactează-ne pentru mai multe informații sau pentru a programa o simulare personalizată!
