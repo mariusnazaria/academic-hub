@@ -331,7 +331,7 @@ export default function Simulare() {
                     className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
                       errors.telefon ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="+373 68 217 739"
+                    placeholder="+373 61 221 666"
                   />
                   {errors.telefon && (
                     <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -467,7 +467,7 @@ export default function Simulare() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="viber://chat?number=37368217739" 
+              href="viber://chat?number=37361221666" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-[#6D28D9] px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors inline-flex items-center"
@@ -476,7 +476,7 @@ export default function Simulare() {
               Viber
             </a>
             <a 
-              href="tel:+37368217739"
+              href="tel:+37361221666"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-green-600 transition-colors"
             >
               Telefon
