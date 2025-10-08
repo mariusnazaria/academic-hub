@@ -60,7 +60,7 @@ export default function Home() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Învață cu profesori experimentați în grupuri mici. 
-                Peste 2000 de elevi au reușit cu noi. 
+                Peste 2700 de elevi au reușit cu noi. 
                 Rezultate garantate!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -69,7 +69,7 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
                 <a 
-                  href="viber://chat?number=37368217739" 
+                  href="viber://chat?number=37361221666" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#6D28D9] text-[#6D28D9] rounded-lg font-medium text-lg hover:bg-[#F3E8FF] transition-colors"
@@ -272,7 +272,7 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Cartea de geometrie m-a ajutat foarte mult! Nu m-a aștempat vreodata să o învăț&rdquo;
+                  &ldquo;La algebra ma descurcam dar la geometrie deloc, sicer multumesc d. Daniel ca am inteles geometria asta ! &rdquo;
                 </p>
               <div className="font-medium text-gray-900">Dumitru Didenco</div>
               <div className="text-sm text-gray-600">Clasa 12, Ialoveni</div>
