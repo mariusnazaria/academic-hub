@@ -64,11 +64,11 @@ export default function Header() {
           {/* Phone and CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="tel:+37368217739" 
+              href="tel:+37361221666" 
               className="flex items-center space-x-2 text-[#4BAD01] hover:text-[#3E8F01] transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">+373 68 217 739</span>
+              <span className="font-medium">+373 61 221 666</span>
             </a>
             <a 
               href="viber://chat?number=37368217739" 
