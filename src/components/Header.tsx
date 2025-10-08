@@ -71,7 +71,7 @@ export default function Header() {
               <span className="font-medium">+373 61 221 666</span>
             </a>
             <a 
-              href="viber://chat?number=37368217739" 
+              href="viber://chat?number=37361221666" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
@@ -138,14 +138,14 @@ export default function Header() {
               </Link>
               <div className="pt-4 border-t">
                 <a 
-                  href="tel:+37368217739" 
+                  href="tel:+37361221666" 
                   className="flex items-center space-x-2 px-3 py-2 text-[#4BAD01] hover:text-[#3E8F01] transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-medium">+373 68 217 739</span>
+                  <span className="font-medium">+373 61 221 666</span>
                 </a>
                 <a 
-                  href="viber://chat?number=37368217739" 
+                  href="viber://chat?number=37361221666" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block mt-2 bg-[#6D28D9] hover:bg-[#5B21B6] text-white px-3 py-2 rounded-lg transition-colors text-center"
