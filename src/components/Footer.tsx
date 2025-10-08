@@ -66,7 +66,7 @@ export default function Footer() {
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="w-4 h-4" />
                 <a href="tel:+37368217739" className="hover:text-white transition-colors">
-                  +373 68 217 739
+                  +373 61 221 666
                 </a>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="w-4 h-4" />
-                <span>Sciusev 31, Chișinău</span>
+                <span>bd. Ștefan cel Mare și Sfânt 196, Chișinău</span>
               </div>
             </div>
           </div>
