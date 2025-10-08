@@ -246,7 +246,7 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Datorită cursurilor de la AcademicHub am reușit să obțin 9 la bac la matematică. Domn Ovidiu explică excelent!&rdquo;
+                  &ldquo;Datorită cursurilor de la AcademicHub am reușit să obțin 9 la bac la matematică. Domn. Ovidiu explică excelent!&rdquo;
                 </p>
               <div className="font-medium text-gray-900">Maria Rusu</div>
               <div className="text-sm text-gray-600">Clasa 12, Chișinău</div>
@@ -259,9 +259,9 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;Metodele de predare sunt foarte eficiente. În sfârșit am înțeles matematica!&rdquo;
+                  &ldquo;Mulțumesc lui d. Călin,în sfârșit am înțeles matematica!&rdquo;
                 </p>
-              <div className="font-medium text-gray-900">Alexandru Negru</div>
+              <div className="font-medium text-gray-900">Alexandru Railean</div>
               <div className="text-sm text-gray-600">Clasa 9, Chișinău</div>
             </div>
             
@@ -274,7 +274,7 @@ export default function Home() {
                               <p className="text-gray-700 mb-4">
                   &ldquo;Cartea de geometrie m-a ajutat foarte mult! Nu m-a aștempat vreodata să o învăț&rdquo;
                 </p>
-              <div className="font-medium text-gray-900">Elena Dumitrache</div>
+              <div className="font-medium text-gray-900">Dumitru Didenco</div>
               <div className="text-sm text-gray-600">Clasa 12, Ialoveni</div>
             </div>
           </div>
