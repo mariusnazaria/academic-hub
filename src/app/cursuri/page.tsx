@@ -94,7 +94,7 @@ export default function Cursuri() {
     {
       title: "Curs Geometrie",
       description: "Curs de geometrie în plan și spațiu",
-      price: "3000 MDL",
+      price: "2950 MDL",
       duration: "6 săptămâni, 12 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
