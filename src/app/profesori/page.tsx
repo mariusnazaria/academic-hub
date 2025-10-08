@@ -34,7 +34,7 @@ export default function Profesori() {
       photo: '/Catalin_Botezat.jpeg',
       contact: {
         email: 'catalin.botezat@gmail.com',
-        phone: '+373 68 217 739'
+        phone: '+373 61 221 666'
       }
     },
     {
@@ -290,7 +290,7 @@ export default function Profesori() {
               Vezi Cursurile
             </Button>
             <a 
-              href="viber://chat?number=37368217739" 
+              href="viber://chat?number=37361221666" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#6D28D9] rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors"
