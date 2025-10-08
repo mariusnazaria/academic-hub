@@ -64,7 +64,7 @@ export default function DespreNoi() {
 
   const achievements = [
     {
-      number: "2000+",
+      number: "2700+",
       label: "Elevi Pregătiți cu Succes"
     },
     {
@@ -76,7 +76,7 @@ export default function DespreNoi() {
       label: "Ani de Experiență"
     },
     {
-      number: "5000+",
+      number: "10000+",
       label: "Ore de Predare"
     },
     {
