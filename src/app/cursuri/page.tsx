@@ -15,7 +15,7 @@ export default function Cursuri() {
     {
       title: "Clasa 9 Nivel A",
       description: "Curs intensiv de matematică pentru clasa 9, nivel avansat",
-      price: "2100 MDL",
+      price: "2500 MDL",
       duration: "5 săptămâni, 10 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
