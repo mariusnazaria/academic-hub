@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
                           <a 
-              href="viber://chat?number=37368217739" 
+              href="viber://chat?number=37361221666" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white p-2 rounded-lg transition-colors" 
@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="w-4 h-4" />
-                <a href="tel:+37368217739" className="hover:text-white transition-colors">
+                <a href="tel:+37361221666" className="hover:text-white transition-colors">
                   +373 61 221 666
                 </a>
               </div>
