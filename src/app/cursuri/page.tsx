@@ -14,7 +14,7 @@ export default function Cursuri() {
   const courses = [
     {
       title: "Clasa 9 Nivel A",
-      description: "Curs intensiv de matematică pentru clasa 9, nivel avansat",
+      description: "Curs intensiv de matematică pentru clasa 9, nivel introducere",
       price: "2500 MDL",
       duration: "5 săptămâni, 10 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
@@ -45,7 +45,7 @@ export default function Cursuri() {
     },
     {
       title: "Clasa 9 Nivel C",
-      description: "Curs de bază de matematică pentru clasa 9, nivel începător",
+      description: "Curs de bază de matematică pentru clasa 9, nivel avansat",
       price: "2500 MDL",
       duration: "5 săptămâni, 10 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
