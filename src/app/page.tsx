@@ -272,7 +272,7 @@ export default function Home() {
                 ))}
               </div>
                               <p className="text-gray-700 mb-4">
-                  &ldquo;La algebra ma descurcam dar la geometrie deloc, sicer multumesc d. Daniel ca am inteles geometria asta ! &rdquo;
+                  &ldquo;La algebra ma descurcam dar la geometrie deloc, sicer multumesc d. Daniel ca am inteles geometria! &rdquo;
                 </p>
               <div className="font-medium text-gray-900">Dumitru Didenco</div>
               <div className="text-sm text-gray-600">Clasa 12, Ialoveni</div>
