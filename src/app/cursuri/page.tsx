@@ -15,8 +15,8 @@ export default function Cursuri() {
     {
       title: "Clasa 9 Nivel A",
       description: "Curs intensiv de matematică pentru clasa 9, nivel introducere",
-      price: "2500 MDL",
-      duration: "5 săptămâni, 10 lecții",
+      price: "2750 MDL",
+      duration: "6 săptămâni, 11 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
@@ -31,8 +31,8 @@ export default function Cursuri() {
     {
       title: "Clasa 9 Nivel B",
       description: "Curs standard de matematică pentru clasa 9, nivel mediu",
-      price: "3250 MDL",
-      duration: "7 săptămâni, 13 lecții",
+      price: "3750 MDL",
+      duration: "8 săptămâni, 15 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
@@ -46,8 +46,8 @@ export default function Cursuri() {
     {
       title: "Clasa 9 Nivel C",
       description: "Curs de bază de matematică pentru clasa 9, nivel avansat",
-      price: "2500 MDL",
-      duration: "5 săptămâni, 10 lecții",
+      price: "2750 MDL",
+      duration: "6 săptămâni, 11 lecții",
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
       subjects: ["Algebră", "Geometrie"],
