@@ -108,22 +108,6 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Curs Geometrie",
-      description: "Curs de geometrie în plan și spațiu",
-      price: "29500000000 MDL",
-      duration: "6 săptămâni, 12 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Geometrie în spațiu", "Coordonate", "Distanțe"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare",
-        "Simulări de examen"
-      ]
-    },
-    {
       title: "Curs pe Combinatorică",
       description: "Curs specializat pe combinatorică.",
       price: "2000 MDL",
@@ -147,22 +131,6 @@ export default function Cursuri() {
       schedule: "Luni-Vineri, 15:00-20:00",
       maxStudents: 5,
       subjects: ["Probabilități", "Distribuții", "Teste statistice"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare",
-        "Simulări de examen"
-      ]
-    },
-     {
-      title: "Pregătire cl.10 ",
-      description: "Pregătire de școală la matematică.",
-      price: "250 lei",
-      duration: "1h 30 min,
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Toate subiectele conform curriculumului de cl. 10"],
       features: [
         "Materiale didactice",
         "Exerciții practice",
