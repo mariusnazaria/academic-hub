@@ -138,6 +138,22 @@ export default function Cursuri() {
         "Teste de evaluare",
         "Simulări de examen"
       ]
+    },
+     {
+      title: "Pregătire cl.10 ",
+      description: "Pregătire de școală la matematică.",
+      price: "250 lei",
+      duration: "1h 30 min,
+      schedule: "Luni-Vineri, 15:00-20:00",
+      maxStudents: 5,
+      subjects: ["Toate subiectele conform curriculumului de cl. 10"],
+      features: [
+        "Materiale didactice",
+        "Exerciții practice",
+        "Suport individual",
+        "Teste de evaluare",
+        "Simulări de examen"
+      ]
     }
   ];
 
