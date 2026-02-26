@@ -21,6 +21,7 @@ export default function Cursuri() {
       maxStudents: 4,
       subjects: ["Algebră", "Geometrie"],
       features: [
+        "Caiete de lucru",
         "Materiale didactice complete",
         "Exerciții practice",
         "Teste de evaluare",
@@ -37,8 +38,8 @@ export default function Cursuri() {
       maxStudents: 5,
       subjects: ["Algebră", "Geometrie", "Analiză", "Probabilități"],
       features: [
+         "Caiete de lucru",
         "Materiale didactice complete",
-        "Caiete de lucru",
         "Exerciții practice avansate",
         "Teste de evaluare",
         "Suport online 24/7",
