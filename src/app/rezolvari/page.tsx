@@ -21,11 +21,11 @@ export default function Rezolvari() {
   const solutions = [
     {
       id: 1,
-      title: 'Rezolvări Cartea de Teste pentru Profilul Real',
+      title: 'Rezolvări Cartea de Teste pentru Profil Real',
       subject: 'all',
       difficulty: 'Complet',
       class: 'Clasa 12',
-      description: 'Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profilul real',
+      description: 'Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profil real',
       topics: ['Algebră', 'Geometrie', 'Trigonometrie', 'Analiză Matematică', 'Probabilități']
     }
   ];
@@ -45,10 +45,10 @@ export default function Rezolvari() {
       <section className="bg-gradient-to-r from-[#4BAD01] to-[#3E8F01] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Rezolvări Cartea de Teste pentru Profilul Real
+            Rezolvări Cartea de Teste pentru Profil Real
           </h1>
           <p className="text-xl text-green-100 max-w-3xl mx-auto">
-            Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profilul real. 
+            Rezolvări complete și detaliate pentru toate problemele din cartea de teste pentru profil real. 
             Materiale de calitate pentru pregătirea la bacalaureat.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function Rezolvari() {
               Rezolvări Complete
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Rezolvări detaliate pentru toate problemele din cartea de teste pentru profilul real
+              Rezolvări detaliate pentru toate problemele din cartea de teste pentru profil real
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function Rezolvari() {
                     
                     <button className="w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
                       <Download className="w-4 h-4" />
-                      Vezi Rezolvările
+                      Vezi Rezolvărileeeeeeee
                     </button>
                   </div>
                 </div>
