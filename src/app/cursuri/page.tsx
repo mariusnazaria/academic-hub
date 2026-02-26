@@ -14,7 +14,7 @@ export default function Cursuri() {
   const courses = [
     {
       title: "Curs de pregătire pentru EXAMEN",
-      description: "Curs intensiv de matematică pentru pregătirea pentru examenul de <b>CLASA 9</b>",
+      description: "Curs intensiv de matematică pentru pregătirea pentru examenul de CLASA 9",
       price: "200 lei",
       duration: "1h 30 min, de 2 ori pe săptămână",
       schedule: "Luni-Duminică, 10:00-20:00",
