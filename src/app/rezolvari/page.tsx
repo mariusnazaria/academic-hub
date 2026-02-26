@@ -142,7 +142,7 @@ export default function Rezolvari() {
                         ))}
                         {solution.topics.length > 3 && (
                           <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">
-                            +{solution.topics.length - 3} mai multe
+                            +{solution.topics.length - 3} mai multe..
                           </span>
                         )}
                       </div>
@@ -152,7 +152,7 @@ export default function Rezolvari() {
                     
                     <button className="w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
                       <Download className="w-4 h-4" />
-                      Vezi Rezolvările!!!!!!!
+                      <a>Vezi Rezolvările te rog</a>
                     </button>
                   </div>
                 </div>
