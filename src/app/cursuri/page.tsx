@@ -13,36 +13,37 @@ export default function Cursuri() {
 
   const courses = [
     {
-      title: "Clasa 9 Nivel A",
-      description: "Curs intensiv de matematică pentru clasa 9, nivel introducere",
-      price: "2750 MDL",
-      duration: "6 săptămâni, 11 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
+      title: "Curs de pregătire pentru EXAMEN pentru clasa 9 ",
+      description: "Curs intensiv de matematică pentru pregătirea de examen",
+      price: "200 lei",
+      duration: "1h 30 min, de 2 ori pe săptămână",
+      schedule: "Luni-Duminică, 10:00-20:00",
+      maxStudents: 4,
       subjects: ["Algebră", "Geometrie"],
       features: [
         "Materiale didactice complete",
         "Exerciții practice",
         "Teste de evaluare",
         "Suport online",
-        "Certificat de finalizare"
+        "Simulări de examen GRATUITE"
       ]
     },
     {
       title: "Curs de pregătire pentru BAC",
       description: "Curs complet de pregătire pentru examenul de bacalaureat",
-      price: "9900 MDL",
-      duration: "4 luni, 40 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
+      price: "200 lei",
+      duration: "1h 30 min, de 2 ori pe săptămână",
+      schedule: "Luni-Duminică, 10:00-20:00",
       maxStudents: 5,
       subjects: ["Algebră", "Geometrie", "Analiză", "Probabilități"],
       features: [
         "Materiale didactice complete",
+        "Caiete de lucru",
         "Exerciții practice avansate",
         "Teste de evaluare",
         "Suport online 24/7",
         "Simulări de examen",
-        "Certificat de finalizare"
+        
       ]
     },
     
