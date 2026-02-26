@@ -29,36 +29,6 @@ export default function Cursuri() {
       ]
     },
     {
-      title: "Clasa 9 Nivel B",
-      description: "Curs standard de matematică pentru clasa 9, nivel mediu",
-      price: "3750 MDL",
-      duration: "8 săptămâni, 15 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Algebră", "Geometrie"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Teste de evaluare",
-        "Suport online"
-      ]
-    },
-    {
-      title: "Clasa 9 Nivel C",
-      description: "Curs de bază de matematică pentru clasa 9, nivel avansat",
-      price: "2750 MDL",
-      duration: "6 săptămâni, 11 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Algebră", "Geometrie"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare"
-      ]
-    },
-    {
       title: "Curs de pregătire pentru BAC",
       description: "Curs complet de pregătire pentru examenul de bacalaureat",
       price: "9900 MDL",
@@ -75,71 +45,8 @@ export default function Cursuri() {
         "Certificat de finalizare"
       ]
     },
-    /*{
-      title: "Curs Integrale",
-      description: "Curs specializat pe calculul integral și aplicații",
-      price: "2500 MDL",
-      duration: "5 săptămâni, 10 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Integrale definite", "Integrale nedefinite", "Aplicații"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Teste de evaluare",
-        "Suport online",
-        "Simulări de examen"
-      ]
-    },
-    {
-      title: "Curs Geometrie",
-      description: "Curs de geometrie în plan și spațiu",
-      price: "2950 MDL",
-      duration: "6 săptămâni, 12 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Geometrie în spațiu", "Coordonate", "Distanțe"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare",
-        "Simulări de examen"
-      ]
-    },
-    {
-      title: "Curs pe Combinatorică",
-      description: "Curs specializat pe combinatorică.",
-      price: "2000 MDL",
-      duration: "4 săptămâni, 8 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Combinatorică", "Permutări", "Combinații"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare",
-        "Simulări de examen"
-      ]
-    },
-    {
-      title: "Curs pe Probabilități",
-      description: "Curs specializat pe teoria probabilității.",
-      price: "2000 MDL",
-      duration: "4 săptămâni, 8 lecții",
-      schedule: "Luni-Vineri, 15:00-20:00",
-      maxStudents: 5,
-      subjects: ["Probabilități", "Distribuții", "Teste statistice"],
-      features: [
-        "Materiale didactice",
-        "Exerciții practice",
-        "Suport individual",
-        "Teste de evaluare",
-        "Simulări de examen"
-      ]
-    }
-  ];*/
+    
+  ];
 
   const handleEnroll = (courseTitle: string) => {
     setSelectedCourse(courseTitle);
