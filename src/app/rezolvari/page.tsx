@@ -152,7 +152,7 @@ export default function Rezolvari() {
                     
                     <button className="w-full bg-[#58CC01] hover:bg-[#4BAD01] text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
                       <Download className="w-4 h-4" />
-                      <a>Vezi Rezolvările te rog</a>
+                      <a href="https://drive.google.com/drive/folders/1_ltQcVn-n7cXOmdsDBaOBXaSa5zuWtWu?usp=sharing"> Vezi Rezolvările</a>
                     </button>
                   </div>
                 </div>
