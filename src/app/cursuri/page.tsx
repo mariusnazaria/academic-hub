@@ -75,7 +75,7 @@ export default function Cursuri() {
         "Certificat de finalizare"
       ]
     },
-    {
+    /*{
       title: "Curs Integrale",
       description: "Curs specializat pe calculul integral și aplicații",
       price: "2500 MDL",
@@ -139,7 +139,7 @@ export default function Cursuri() {
         "Simulări de examen"
       ]
     }
-  ];
+  ];*/
 
   const handleEnroll = (courseTitle: string) => {
     setSelectedCourse(courseTitle);
